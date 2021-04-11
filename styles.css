@@ -141,7 +141,7 @@ main {
     color: var(--black);
 }
 
-.main-exchage-container p {
+.main-exchage-container .main-exchange-container--title-slogan {
     margin-bottom: 30px;
     font-size: 1.4rem;
     font-weight: 500;
@@ -153,7 +153,7 @@ main {
     width: 70%;
     min-width: 235px;
     max-width: 500px;
-    height: 360px;
+    height: 300px;
     margin: 0 auto;
     font-family: "Inter", sans-serif;
 }
@@ -166,7 +166,15 @@ main {
     color: var(--bitcoin-orange);
 }
 
-.currency-table--container {
+.main-currency-table .commission-table--title{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--secondary-blue);
+}
+
+/* .currency-table--container {
     width: 90%;
     min-width: 230px;
     max-width: 300px;
@@ -220,4 +228,97 @@ main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+} */
+
+.current-exchange-container {
+    width: 100%;
+    height: 160px;
+    max-width: 300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.current-exchange-container div {
+    width: 99%;
+    height: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    background-color: var(--just-white);
+}
+
+.current-exchange-container .container-top-left {
+    border-radius: 8px 0 0 0;
+}
+
+.current-exchange-container .container-top-right {
+    border-radius: 0 8px 0 0;
+}
+
+.current-exchange-container .container-bottom-left {
+    border-radius: 0 0 0 8px;
+}
+
+.current-exchange-container .container-bottom-right {
+    border-radius: 0 0 8px 0;
+}
+
+.current-exchange-container div .coin-name {
+    width: 77px;
+    height: 20px;
+    text-align: left;
+    color: #B5B0AC;
+    font-weight: 500;
+}
+
+.current-exchange-container div .price-coin {
+    width: 70px;
+    height: 20px;
+    font-weight: normal;
+    color: #757575;
+}
+
+.current-exchange-container div span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.current-exchange-container div .bitcoin-price {
+    background-image: url('./assets/icons/trending-down.svg');
+}
+
+.current-exchange-container div .ethereum-price {
+    background-image: url('./assets/icons/trending-up.svg');
+}
+
+.current-exchange-container div .ripple-price {
+    background-image: url('./assets/icons/trending-down.svg');
+}
+
+.current-exchange-container div .stellar-price {
+    background-image: url('./assets/icons/trending-down.svg');
+}
+
+.currency-table--date {
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--sof-orange);
+    border-radius: 8px;
+}
+
+.currency-table--date p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    color: var(--warm-black);
 }
